@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: 'Poppins', 'Times New Roman', Times, serif ;
+}
+
+
+/* HEADER */
+
+
+
+nav a:hover{
+  background: #255653;
+  color: white;
+
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color:#E2D1F9;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: "cinzel", serif;
+  font-size: 25px;
+  padding: 10px;
+  transition: all 350ms linear 0s;
+  background-color: #317773;
+  
+}
+
+
+.container{
+  box-sizing: border-box;
+  height: 100px;
+  padding: 1rem;
+  display: flex;
+  align-items: center ;
+  background-color:#E2D1F9;
+  justify-content: space-between
+}
+
+header .container img{
+  height: 95px;
+  }
+
+.menu{
+  display: flex;
+  list-style: none;
+  gap: .5rem;
+}
+
+#btn-mobile{
+  display: none;
+ 
+}
+
+#btn-mainpage{
+  opacity: 0;
+  position: fixed;
+  cursor:pointer;
+  margin-top: -17px;
+  left: 34px;
+  height: 40px;
+  width: 240px; 
+ 
+} 
+
+/*TITLE*/
+
+.title{
+  background-color: #5ba66e;
+}
+
+
+/*body*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #69bf6f;
+}
+
+
+.container2{
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/megasena.jpg);
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  align-items:center;
+  margin-bottom: 40px;
+}
+
+#text1{
+  font-size: 40px;
+  color: white;
+  font-weight: bolder;
+  align-self: flex-start;
+  margin-top: 90px;
+  margin-left: 20px;
+}
+
+#text2{
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 20px;
+
+}
+
+#btn-img a{
+  color: white;
+  font-weight: bolder;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+#btn-img{
+  width: 200px;
+  background-color:#064635;
+  margin-right: 20px;
+  margin-top: 300px;
+}
+
+
+
+
+/*GAME*/
+
+button {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.main {
+  padding: 10px;
+}
+
+.numbers {
+  border: 1px solid #064635;
+  padding: 10px;
+  list-style-type: none;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+}
+
+.number {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #064635;
+  width: 40px;
+  border-radius: 100%;
+  padding: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.selected-number {
+  background-color: #064635;
+  color: #E2D1F9;
+}
+
+#megasena-buttons button{
+  margin-top: 30px;
+  background: #E2D1F9;
+  color: #064635;
+  font-weight: bolder;
+  border-radius: 1px;
+  border:none;
+  padding: 5px;
+}
+
+#megasena-buttons button:hover{
+
+  background: #064635; 
+  color: #E2D1F9;
+  font-weight: bolder;
+  border-radius: 1px;
+  border:none;
+}
+
+#megasena-saved-games ul{
+  margin-top: 20px;
+  color: #064635;
+  font-weight: bolder;
+}
+
+#megasena-saved-games p{
+  margin-top: 10px;
+  color: #064635;
+  font-weight: bolder;
+}
+
+

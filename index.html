@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png"/>
+
+    <title>Mega Sena v2</title>
+  </head>
+
+  <body>
+    <header id="navegador_inicial">
+      <div class="container">
+          <img src="./img/logo1.JPG" alt="logo" />
+          <form>
+              <a href="./index.html">
+                  <input type="button" id="btn-mainpage"/>
+              </a>
+          </form>
+                  <nav id="container-nav">
+                      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" 
+                                          aria-expanded="false">
+                          <span id="hamburguer"></span>
+                      </button>
+                      <ul class="menu" role="menu">
+                          <li>
+                              <a href="./sobreDev/dev.html">Sobre o Dev</a>
+                          </li>
+                      </ul>
+                  </nav>
+      </div>
+  </header>
+    <tbody>
+      <div class="container2">
+          <p id="text1">Já pensou em ficar milionário?</p>
+          <p id="text2">Teste a sua sorte</p>
+          <button id="btn-img" type="button">
+            <a href="#megasena-board">JOGAR</a>
+        </button>
+      </div>
+    </tbody>
+    <main class="main">
+      
+      <div id="megasena-board"></div>
+      <div id="megasena-buttons"></div>
+      <div id="megasena-saved-games"></div>     
+
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/menu.js"></script>
+  </body>
+</html>

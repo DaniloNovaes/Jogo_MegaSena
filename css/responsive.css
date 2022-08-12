@@ -1,0 +1,158 @@
+
+@media (max-width: 1300px){
+
+ *{
+    overflow-x: hidden;
+ }
+    #btn-curso{
+        
+       margin-bottom: 15px; 
+    }
+  
+body {
+  
+overflow-x: hidden;
+} /*Para a responsividade do Mobile*/
+
+#btn-mobile{
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+}
+
+#hamburguer{
+  display: block;
+  color: #317773;
+  border-top: 2px solid;
+  width: 20px;  
+}
+
+#hamburguer::after, #hamburguer::before{
+ content: '';
+ display: block;  
+ width: 20px;
+ height: 2px;
+ background: currentColor; 
+ margin-top: 5px;
+ transition: .3s;
+ position: relative;
+}
+
+#container-nav.active #hamburguer{
+   border-top: none;   
+}
+
+#container-nav.active #hamburguer::before{
+   transform: rotate(135deg);   
+}
+
+#container-nav.active #hamburguer::after{
+  transform: rotate(-135deg);
+  top: -7px; /* Para alinhar o X. No entanto, precisa do position Relative em 
+                #hamburguer::after, #hamburguer::before para funcionar */
+}
+
+#container-nav{
+    margin-bottom: 6px;
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    margin-top: 33px;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    left: 100%;
+    transform: translateX(100vw);
+    transition: 0.5s ease transform;
+    z-index: 9999;
+}
+
+.menu>li {
+    
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+    background-color: #317773;
+    border-right: none;
+    border-bottom: none;
+
+}
+
+.menu li a {
+    color:white;
+    font-weight: bolder;
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#container-nav.active .menu{
+    display: block;
+    transform: translateX(-100vw);
+    transition: 0.5s ease transform;
+    
+}
+
+/*BODY IMG*/
+
+
+
+#text1{
+    width: 10000px;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 70px;
+    margin-bottom: none;
+    overflow-x: visible;
+    overflow-y: visible;
+ 
+  }
+  
+  #text2{
+    width: 500vh;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    margin-left: -800px;
+    overflow: visible;
+  }
+  
+  #btn-img a{
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+    
+  }
+
+  #btn-img{
+    width: 500px;
+    background-color:#064635;
+    margin-left: -200px;
+    margin-top: 300px;
+    overflow: visible;
+  }
+
+  header .container img{
+    height: 60px;
+    }
+  
+
+
+
+}

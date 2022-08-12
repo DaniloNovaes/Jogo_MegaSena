@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Poppins', 'Times New Roman', Times, serif ;
+
+
+}
+
+/* HEADER */
+
+
+
+nav a:hover{
+    background: #255653;
+    color: white;
+  
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: "cinzel", serif;
+    font-size: 25px;
+    padding: 10px;
+    transition: all 350ms linear 0s;
+    background-color: #317773;
+    
+}
+
+header .container img{
+    height: 80px;
+}
+
+.container{
+    box-sizing: border-box;
+    height: 100px;
+    padding: 1rem;
+    display: flex;
+    align-items: center ;
+    background-color: #E2D1F9;
+    justify-content: space-between;
+    border-bottom: solid 2px #317773;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#btn-mobile{
+    display: none;
+   
+}
+
+#btn-mainpage{
+    opacity: 0;
+    position: fixed;
+    cursor:pointer;
+    margin-top: -17px;
+    left: 34px;
+    height: 40px;
+    width: 240px; 
+   
+} 
+
+
+/*BODY*/
+
+/*body {
+    background-image: url("../assets/img/itirenario_background.jpeg");
+    background-size:cover;
+   
+  
+}*/
+
+
+
+.tituloPrincipal{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #317773;
+    font-family: "cinzel", serif;
+   
+}
+
+main {
+    margin-bottom: 10px;
+}
+
+
+.container-text{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 100px auto 0px auto; 
+
+}
+
+h2{
+    color: rgb(0,0,0);
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* CARDS */
+
+#imgCards img{
+    width: 750px;
+}
+
+#fot1{
+
+    margin-top: 140px;
+    margin-left: -150px;
+    
+}
+
+
+.cards {
+    width: 30%;
+    max-width: 980px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    
+}
+
+.info{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    color:#E2D1F9;
+    text-align:center;
+}
+
+#name-dev{
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+#role-dev{
+    font-size: 28px;
+}
+
+#text-dev{
+    text-align: center;
+}
+
+.text--medium{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color:#E2D1F9;
+    text-align:center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px #000000;
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+    background-color: #317773;
+}
+
+.card:hover{
+    transform: translateY(-7px);
+}
+
+.image {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    height: 400px;
+}
+
+.image img{
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.content {
+    margin:20px;
+}
+
+.title{
+    margin-bottom:0px;
+}
+
+
+.btn-Github{
+    background-color: transparent;
+    border: none;
+}
+.btn-Github i{
+    color: #E2D1F9;
+
+}
+.btn-Linkedin{
+    background-color: transparent;
+    border: none;
+}
+
+.btn-Linkedin i{
+    color: #E2D1F9;
+}
+
+
+
+
+
+/*HEADER NAV*/
+
+@media (max-width: 1000px){
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    
+    #hamburguer{
+      display: block;
+      color: #317773;
+      border-top: 2px solid;
+      width: 20px;  
+    }
+    
+    #hamburguer::after, #hamburguer::before{
+     content: '';
+     display: block;  
+     width: 20px;
+     height: 2px;
+     background: currentColor; 
+     margin-top: 5px;
+     transition: .3s;
+     position: relative;
+    }
+    
+    #container-nav.active #hamburguer{
+       border-top: none;   
+    }
+    
+    #container-nav.active #hamburguer::before{
+       transform: rotate(135deg);   
+    }
+    
+    #container-nav.active #hamburguer::after{
+      transform: rotate(-135deg);
+      top: -7px; /* Para alinhar o X. No entanto, precisa do position Relative em 
+                    #hamburguer::after, #hamburguer::before para funcionar */
+    }
+    
+    #container-nav{
+        margin-bottom: 6px;
+    }
+    
+    .menu{
+        display: none;
+        position: absolute;
+        margin-top: 22px;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        left: 100%;
+        transform: translateX(100vw);
+        transition: 0.5s ease transform;
+    }
+    
+    .menu>li {
+        
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        width: 100%;
+        color: #317773;
+        background-color: #317773;
+        border-radius: 5px;
+        border: 1px solid whitesmoke;
+    }
+    
+    .menu li a {
+        flex: 1;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    
+    #container-nav.active .menu{
+        display: block;
+        transform: translateX(-100vw);
+        transition: 0.5s ease transform;
+        
+    }
+
+   .cards{
+    width: 80%;
+   }
+   #role-dev{
+    font-size: 27px;
+   }
+
+   #container-nav{
+    margin-top:25px;
+}
+    
+    
+    }
+    
+    @media (max-width: 780px){ 
+
+        .tituloPrincipal h1{
+            font-size: 30px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 66px;
+        }
+    
+    
+    }
+    
+
