@@ -111,16 +111,22 @@ body {
 
 }
 
+#btn-img:hover{
+color: white;
+background-color: #064635;
+}
+
 #btn-img a{
-  color: white;
+  color: #E2D1F9;
   font-weight: bolder;
   font-size: 40px;
   text-decoration: none;
 }
 
 #btn-img{
+  
   width: 200px;
-  background-color:#064635;
+  background-color:#255653;
   margin-right: 20px;
   margin-top: 300px;
 }
@@ -157,6 +163,10 @@ button {
   padding: 5px;
   user-select: none;
   cursor: pointer;
+}
+
+.number:hover{
+  background-color: #064635;
 }
 
 .selected-number {
